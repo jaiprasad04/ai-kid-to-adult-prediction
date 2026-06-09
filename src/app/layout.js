@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Providers from "../components/Providers";
-import { Navbar } from "../components/layout/Navbar";
+import { Providers } from "./providers";
+import Navbar from "../components/Navbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,11 +15,15 @@ export const metadata = {
     "Predict how your child will look as an adult with stunning photorealistic accuracy using Google DeepMind's Nano Banana 2 models.",
 };
 
+import config from "@/lib/config";
+
 export default function RootLayout({ children }) {
+  const theme = config?.theme || "slate-indigo";
+
   return (
-    <html lang="en" className="h-full w-full dark" style={{ colorScheme: "dark" }}>
+    <html lang="en" className="h-full w-full" data-theme={theme}>
       <body
-        className={`${inter.variable} ${inter.className} h-full w-full flex flex-col antialiased bg-zinc-950 text-zinc-100 overflow-hidden`}
+        className={`${inter.variable} ${inter.className} h-full w-full flex flex-col antialiased bg-bg-page text-primary-text overflow-hidden`}
       >
         <Providers>
           <Navbar />

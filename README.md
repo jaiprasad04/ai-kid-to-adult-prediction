@@ -15,6 +15,8 @@
 
 > 🎨 **[Explore 50+ more open-source AI apps →](https://github.com/Anil-matcha/awesome-generative-ai-apps)**
 
+https://github.com/user-attachments/assets/d413c104-0bc3-4c2d-8909-041ea407244c
+
 ## 🌐 Project Details
 
 **GitHub Repository:** [github.com/SamurAIGPT/ai-kid-to-adult-prediction](https://github.com/SamurAIGPT/ai-kid-to-adult-prediction)
